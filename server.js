@@ -12,5 +12,7 @@ app.post('/logout',function (req,res) {
 app.get('/login',function (req,res) {
     res.send("hello")
 })
+const PORT=process.env.PORT || 8080
 
-app.listen(5000,console.log("server----2 is running"))
+
+app.listen(PORT,console.log("server----2 is running"))
